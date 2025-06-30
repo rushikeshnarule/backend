@@ -11,8 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://saaumedia:asNnp1iTshQqsQXp@cluster0.97ytcfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  
 });
 mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
